@@ -1,0 +1,103 @@
+.todoapp{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(194, 192, 192);
+    border-radius: 5px;
+}
+.todo{
+    text-align: center;
+    
+}
+.addTodo{
+    font-size: 20px;
+    padding: 1%;
+    width: 60%;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+.addTodo:focus{
+    outline: none;
+}
+::placeholder{
+    color: rgb(207, 203, 203);
+    font-size: medium;
+}
+.todoitem{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 78%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 25px;
+    
+}
+.todoitem>div{
+    display: flex;
+    align-items: center;
+}
+.checkbox{
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+.checkbox[type="checkbox"]:before {
+    position: relative;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #808080;
+    content: "";
+    background: #FFF;
+    
+  }
+  
+  .checkbox[type="checkbox"]:after {
+    position: relative;
+    display: block;
+    left: 2px;
+    top: -15px;
+    width: 11px;
+    height: 11px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #B3B3B3 #dcddde #dcddde #B3B3B3;
+    content: "";
+    background-image: linear-gradient(135deg, #B1B6BE 0%, #FFF 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .checkbox[type="checkbox"]:checked:after {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAQAAABuW59YAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAB2SURBVHjaAGkAlv8A3QDyAP0A/QD+Dam3W+kCAAD8APYAAgTVZaZCGwwA5wr0AvcA+Dh+7UX/x24AqK3Wg/8nt6w4/5q71wAAVP9g/7rTXf9n/+9N+AAAtpJa/zf/S//DhP8H/wAA4gzWj2P4lsf0JP0A/wADAHB0Ngka6UmKAAAAAElFTkSuQmCC'), linear-gradient(135deg, #B1B6BE 0%, #FFF 100%);
+  }
+.delete{
+    border: none;
+    background: transparent;
+    color: rgb(177, 173, 173);
+}
+.delete:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.striked{
+    text-decoration: line-through;
+}
+.addButton{
+    font-size: 18px;
+    padding: 6.5px 15px;
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+
