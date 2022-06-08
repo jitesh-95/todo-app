@@ -1,29 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./todo.module.css";
 import Todolist from "./Todolist";
 import { v4 as uuidv4 } from "uuid";
 import Completed from "./Completed";
 
-const completedArray = [];
 
-const Todo = () => {
-  const [value, setValue] = useState("");
-  const [todos, setTodos] = useState([]);
 
-  const onDelete = (id) => {
-    let newTodos = todos.filter((item) => item.id !== id);
-    setTodos(newTodos);
-  };
-
-  const completedTodo = (todo) => {
-    let newTodos = todos.filter((item) => item.id !== todo.id);
-    let newCompletedTodos = todo;
-    completedArray.push(newCompletedTodos);
-    setTodos(newTodos);
-
-    // console.log("completedArray:", completedArray)
-  };
-
+const Todo = ({
+  value,
+  todos,
+  setValue,
+  setTodos,
+  onDelete,
+  completedTodo,
+  completedArray,
+}) => {
   let showCompleted = completedArray.length;
 
   return (
